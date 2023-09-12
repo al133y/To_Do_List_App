@@ -6,6 +6,8 @@
 
   <div class="box">
     
+
+    <!-- list of existing items, contains a delete button  -->
     
     <% newListItems.forEach(item => { %>
       <form action="/delete" method="post">
@@ -16,6 +18,9 @@
         </div>
       </form>
       <% }); %>
+      
+
+      <!-- add new items form -->
       
       <form class="item" action="/" method="post">
         <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
